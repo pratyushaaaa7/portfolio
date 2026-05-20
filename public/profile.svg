@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1120" viewBox="0 0 900 1120" role="img" aria-label="Profile placeholder">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.35"/>
+      <stop offset="0.5" stop-color="#6366f1" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#d946ef" stop-opacity="0.35"/>
+    </linearGradient>
+    <radialGradient id="r" cx="35%" cy="30%" r="70%">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#030712" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="900" height="1120" fill="#070b18"/>
+  <rect width="900" height="1120" fill="url(#g)"/>
+  <rect width="900" height="1120" fill="url(#r)"/>
+  <text x="50%" y="52%" text-anchor="middle" fill="#e2e8f0" font-family="ui-sans-serif, system-ui" font-size="120" font-weight="700" opacity="0.9">P</text>
+  <text x="50%" y="60%" text-anchor="middle" fill="#94a3b8" font-family="ui-sans-serif, system-ui" font-size="28" font-weight="600">Replace with your photo</text>
+</svg>
