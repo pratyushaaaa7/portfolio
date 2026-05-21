@@ -177,25 +177,23 @@ function ProjectCard({ project }: { project: (typeof PROJECTS)[number] }) {
           <p className="mt-2 text-sm font-semibold text-cyan-200/90">{project.subtitle}</p>
           <p className="mt-4 text-sm leading-relaxed text-body sm:text-base">{project.description}</p>
 
-          <div className="mt-6 flex flex-wrap gap-2">
-            <Link
-              href={project.github}
-              target="_blank"
-              rel="noreferrer"
-              className="btn-ghost !px-4 !py-2"
-            >
-              <Github className="h-4 w-4" />
-              GitHub
-            </Link>
-            <Link
-              href={project.live}
-              target="_blank"
-              rel="noreferrer"
-              className="btn-primary !px-4 !py-2"
-            >
-              <ExternalLink className="h-4 w-4" />
-              Live preview
-            </Link>
+          <div className="mt-6 flex flex-wrap gap-2 items-center">
+            {project.slug !== "workflo-web" ? (
+              <Link
+                href={project.github}
+                target="_blank"
+                rel="noreferrer"
+                className="btn-ghost !px-4 !py-2"
+              >
+                <Github className="h-4 w-4" />
+                GitHub
+              </Link>
+            ) : null}
+            {project.status ? (
+              <span className="rounded-full border border-[var(--theme-border)] bg-[var(--theme-accent-subtle)] px-4 py-2 text-sm font-semibold text-heading">
+                {project.status}
+              </span>
+            ) : null}
           </div>
 
           <div className="mt-8 rounded-2xl border border-[var(--theme-border)] bg-[var(--theme-accent-subtle)] p-5">

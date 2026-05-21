@@ -157,8 +157,8 @@ export type ProjectFilter = "all" | "mobile" | "web" | "fullstack";
 
 export const PROJECTS = [
   {
-    slug: "thuhroh-mobile",
-    title: "Thuhroh Application",
+    slug: "workflo-mobile",
+    title: "WorkFlo Application",
     subtitle: "Enterprise project management — mobile",
     category: "mobile" as const,
     featured: true,
@@ -203,7 +203,7 @@ export const PROJECTS = [
       "Docker + VPS production deployment",
       "Scalable modular architecture",
     ],
-    github: "https://github.com/",
+    github: "https://github.com/pratyushaaaa7/WorkFlo",
     live: "https://example.com/",
     galleryLabels: [
       "Dashboard",
@@ -216,13 +216,44 @@ export const PROJECTS = [
     mockup: "phone" as const,
   },
   {
-    slug: "thuhroh-web",
-    title: "Thuhroh Website",
+    slug: "staynest",
+    title: "StayNest Website",
+    subtitle: "Property rental & booking platform",
+    category: "web" as const,
+    featured: false,
+    description:
+      "A modern property rental and booking platform with secure authentication, responsive UX, and a hardened backend integration layer.",
+    features: [
+      "Property listing system",
+      "Booking workflows",
+      "User authentication",
+      "Role-based access",
+      "REST API integration",
+      "Responsive UI",
+      "Secure backend architecture",
+    ],
+    stack: ["HTML", "CSS", "Bootstrap", "JavaScript", "Node.js", "Express.js", "MongoDB"],
+    architecture:
+      "MVC-oriented Express API with MongoDB models, Bootstrap-driven responsive views, and JWT-ready session patterns for scalable rental operations.",
+    highlights: [
+      "End-to-end rental flows",
+      "Responsive property browsing",
+      "Secure REST integrations",
+      "Production-minded error handling",
+    ],
+    github: "https://github.com/",
+    live: "https://example.com/",
+    galleryLabels: ["Listings", "Property details", "Booking", "Responsive layouts"],
+    mockup: "desktop" as const,
+  },
+  {
+    slug: "workflo-web",
+    title: "WorkFlo Website",
     subtitle: "Enterprise workflows — web platform",
     category: "fullstack" as const,
-    featured: true,
+    featured: false,
     description:
-      "A modern responsive web platform for the Thuhroh ecosystem, tuned for desktop and enterprise workflows with modular, API-driven architecture.",
+      "A modern responsive web platform for the WorkFlo ecosystem, tuned for desktop and enterprise workflows with modular, API-driven architecture.",
     features: [
       "Responsive admin dashboards",
       "Real-time modules",
@@ -259,38 +290,8 @@ export const PROJECTS = [
     ],
     github: "https://github.com/",
     live: "https://example.com/",
+    status: "Work in progress",
     galleryLabels: ["Dashboard", "Analytics", "Forms", "Admin panels", "Reports", "RBAC"],
-    mockup: "desktop" as const,
-  },
-  {
-    slug: "staynest",
-    title: "StayNest Website",
-    subtitle: "Property rental & booking platform",
-    category: "web" as const,
-    featured: false,
-    description:
-      "A modern property rental and booking platform with secure authentication, responsive UX, and a hardened backend integration layer.",
-    features: [
-      "Property listing system",
-      "Booking workflows",
-      "User authentication",
-      "Role-based access",
-      "REST API integration",
-      "Responsive UI",
-      "Secure backend architecture",
-    ],
-    stack: ["HTML", "CSS", "Bootstrap", "JavaScript", "Node.js", "Express.js", "MongoDB"],
-    architecture:
-      "MVC-oriented Express API with MongoDB models, Bootstrap-driven responsive views, and JWT-ready session patterns for scalable rental operations.",
-    highlights: [
-      "End-to-end rental flows",
-      "Responsive property browsing",
-      "Secure REST integrations",
-      "Production-minded error handling",
-    ],
-    github: "https://github.com/",
-    live: "https://example.com/",
-    galleryLabels: ["Listings", "Property details", "Booking", "Responsive layouts"],
     mockup: "desktop" as const,
   },
 ] as const;
