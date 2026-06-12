@@ -15,7 +15,7 @@ export function ProjectsLoading() {
           <div className="relative overflow-hidden rounded-[1.75rem] border border-[var(--theme-border)] bg-[var(--theme-accent-subtle)] p-10">
             <div className="absolute inset-0 bg-[var(--theme-surface)]/80" />
             <div className="relative flex h-72 items-center justify-center">
-              <HelloLoader message="Loading the experience inside the MacBook — hang tight while the page becomes ready." />
+              <HelloLoader />
             </div>
           </div>
         </div>

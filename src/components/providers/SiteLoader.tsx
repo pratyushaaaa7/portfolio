@@ -53,7 +53,7 @@ export function SiteLoader() {
           aria-label="Loading portfolio"
         >
           <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,color-mix(in_srgb,var(--theme-accent)_12%,transparent),transparent_70%)]" />
-          <HelloLoader message="Warming up sections, animations, and your GitHub activity…" />
+          <HelloLoader />
         </motion.div>
       ) : null}
     </AnimatePresence>

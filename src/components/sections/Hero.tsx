@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowRight, Download, Sparkles } from "lucide-react";
-import { HERO_TECH_BADGES, SITE } from "@/lib/constants";
+import { SITE } from "@/lib/constants";
 import { ParticleField } from "@/components/ui/ParticleField";
 import { Reveal } from "@/components/ui/Reveal";
 

@@ -118,7 +118,7 @@ export function GitHubContributions({ initialData = null }: Props) {
             <div className="px-3 py-4 sm:px-4 sm:py-5">
               {loading ? (
                 <div className="flex min-h-[200px] items-center justify-center py-10">
-                  <HelloLoader size="sm" message="Pulling contribution squares from GitHub…" />
+                  <HelloLoader size="sm" />
                 </div>
               ) : (
                 <div className="gh-graph-inner">

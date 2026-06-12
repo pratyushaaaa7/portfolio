@@ -3,7 +3,7 @@
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
-import { ArrowLeft, ArrowRight, ExternalLink, Github, Layers, Smartphone, Monitor } from "lucide-react";
+import { ArrowLeft, ArrowRight, Github, Layers, Smartphone, Monitor } from "lucide-react";
 import { PROJECTS, type ProjectFilter } from "@/lib/constants";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -189,7 +189,7 @@ function ProjectCard({ project }: { project: (typeof PROJECTS)[number] }) {
                 GitHub
               </Link>
             ) : null}
-            {project.status ? (
+            {"status" in project && project.status ? (
               <span className="rounded-full border border-[var(--theme-border)] bg-[var(--theme-accent-subtle)] px-4 py-2 text-sm font-semibold text-heading">
                 {project.status}
               </span>

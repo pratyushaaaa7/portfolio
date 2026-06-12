@@ -8,13 +8,11 @@ const HELLOS = ["Hello", "Namaste", "Ni hao", "Hola", "Bonjour", "Ciao"];
 
 type HelloLoaderProps = {
   className?: string;
-  message?: string;
   size?: "sm" | "lg";
 };
 
 export function HelloLoader({
   className,
-  message = "Loading the experience — hang tight while the page gets ready.",
   size = "lg",
 }: HelloLoaderProps) {
   const [index, setIndex] = useState(0);
