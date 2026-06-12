@@ -1,27 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Reveal } from "@/components/ui/Reveal";
+
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { STATS } from "@/lib/constants";
 
-const pillars = [
-  "Full-Stack Development",
-  "React & Next.js",
-  "React Native & Expo",
-  "TypeScript",
-  "Node.js & Express",
-  "REST API Design",
-  "MongoDB & MySQL",
-  "Docker & CI/CD",
-  "VPS Deployment",
-  "Nginx & PM2",
-  "Cloud Infrastructure",
-  "Expo Push Notifications",
-  "Real-time Applications",
-  "JWT & Auth Systems",
-  "Responsive UI Systems",
-];
 
 export function About() {
   return (
@@ -56,22 +39,6 @@ export function About() {
           </div>
         </div>
 
-
-        {/* <Reveal className="mt-10">
-          <div className="glass rounded-3xl p-6 sm:p-8">
-            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-cyan-300/80">Expertise map</p>
-            <div className="mt-5 flex flex-wrap gap-2">
-              {pillars.map((p) => (
-                <span
-                  key={p}
-                  className="rounded-full border border-[var(--theme-border)] bg-[var(--theme-accent-muted)] px-3 py-1 text-xs font-semibold text-heading"
-                >
-                  {p}
-                </span>
-              ))}
-            </div>
-          </div>
-        </Reveal> */}
       </div>
     </section>
   );
