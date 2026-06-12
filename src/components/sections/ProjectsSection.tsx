@@ -152,7 +152,7 @@ function ProjectCard({ project }: { project: (typeof PROJECTS)[number] }) {
       ) : null}
 
       <div className="relative grid gap-10 lg:grid-cols-12 lg:items-start">
-        <div className="lg:col-span-6">
+        <div className={"noImage" in project && project.noImage ? "lg:col-span-12" : "lg:col-span-6"}>
           <div className="flex flex-wrap items-center gap-2">
             <span className="chip text-xs font-semibold">
               {project.category === "mobile" ? (
@@ -178,7 +178,7 @@ function ProjectCard({ project }: { project: (typeof PROJECTS)[number] }) {
           <p className="mt-4 text-sm leading-relaxed text-body sm:text-base">{project.description}</p>
 
           <div className="mt-6 flex flex-wrap gap-2 items-center">
-            {project.slug !== "workflo-web" ? (
+            {project.slug !== "thuhroh-web" ? (
               <Link
                 href={project.github}
                 target="_blank"
@@ -205,9 +205,21 @@ function ProjectCard({ project }: { project: (typeof PROJECTS)[number] }) {
           </div>
         </div>
 
-        <div className="lg:col-span-6">
-          <Gallery labels={project.galleryLabels} slug={project.slug} mockup={project.mockup} />
-        </div>
+        {!("noImage" in project && project.noImage) && (
+          <div className="lg:col-span-6">
+            {"pdfUrl" in project && project.pdfUrl ? (
+              <div className="relative w-full overflow-hidden rounded-2xl border border-[var(--theme-border)] bg-[var(--theme-accent-subtle)] h-[520px]">
+                <iframe
+                  src={`${project.pdfUrl}#toolbar=0&view=FitH`}
+                  className="w-full h-full border-0"
+                  title={`${project.title} PDF`}
+                />
+              </div>
+            ) : (
+              <Gallery labels={project.galleryLabels} slug={project.slug} mockup={project.mockup} />
+            )}
+          </div>
+        )}
 
         <div className="lg:col-span-12">
           <div className="grid gap-6 lg:grid-cols-2">
@@ -293,15 +305,6 @@ export function ProjectsSection() {
             </Reveal>
           ))}
         </div>
-
-        <Reveal className="panel mt-10 rounded-3xl border-dashed p-6 text-sm text-subtle">
-          <p className="font-semibold text-heading">Image workflow</p>
-          <p className="mt-2 leading-relaxed">
-            Add responsive screenshots under <span className="font-mono text-accent">public/projects/</span> and
-            swap the placeholder gallery for <span className="font-mono text-accent">next/image</span> slides.
-            Lazy-load heavy assets per slide to keep LCP crisp.
-          </p>
-        </Reveal>
       </div>
     </section>
   );

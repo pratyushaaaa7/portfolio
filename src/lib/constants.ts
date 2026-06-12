@@ -157,8 +157,8 @@ export type ProjectFilter = "all" | "mobile" | "web" | "fullstack";
 
 export const PROJECTS = [
   {
-    slug: "workflo-mobile",
-    title: "WorkFlo Application",
+    slug: "thuhroh-mobile",
+    title: "Thuhroh Application",
     subtitle: "Enterprise project management — mobile",
     category: "mobile" as const,
     featured: true,
@@ -203,7 +203,7 @@ export const PROJECTS = [
       "Docker + VPS production deployment",
       "Scalable modular architecture",
     ],
-    github: "https://github.com/pratyushaaaa7/WorkFlo",
+    github: "https://github.com/pratyushaaaa7/Thuhroh",
     live: "https://example.com/",
     galleryLabels: [
       "Dashboard",
@@ -214,10 +214,11 @@ export const PROJECTS = [
       "Admin modules",
     ],
     mockup: "phone" as const,
+    pdfUrl: "/Thuhroh_app.pdf",
   },
   {
-    slug: "staynest",
-    title: "StayNest Website",
+    slug: "wanderlust",
+    title: "Wanderlust Website",
     subtitle: "Property rental & booking platform",
     category: "web" as const,
     featured: false,
@@ -245,15 +246,16 @@ export const PROJECTS = [
     live: "https://example.com/",
     galleryLabels: ["Listings", "Property details", "Booking", "Responsive layouts"],
     mockup: "desktop" as const,
+    noImage: true,
   },
   {
-    slug: "workflo-web",
-    title: "WorkFlo Website",
+    slug: "thuhroh-web",
+    title: "Thuhroh Website",
     subtitle: "Enterprise workflows — web platform",
     category: "fullstack" as const,
     featured: false,
     description:
-      "A modern responsive web platform for the WorkFlo ecosystem, tuned for desktop and enterprise workflows with modular, API-driven architecture.",
+      "A modern responsive web platform for the Thuhroh ecosystem, tuned for desktop and enterprise workflows with modular, API-driven architecture.",
     features: [
       "Responsive admin dashboards",
       "Real-time modules",
@@ -293,6 +295,7 @@ export const PROJECTS = [
     status: "Work in progress",
     galleryLabels: ["Dashboard", "Analytics", "Forms", "Admin panels", "Reports", "RBAC"],
     mockup: "desktop" as const,
+    pdfUrl: "/website.pdf",
   },
 ] as const;
 

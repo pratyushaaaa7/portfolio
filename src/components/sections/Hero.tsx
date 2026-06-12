@@ -118,13 +118,7 @@ export function Hero() {
               </motion.div>
             </motion.div>
 
-            <div className="mt-6 flex flex-wrap justify-center gap-2 sm:justify-start lg:justify-center">
-              {HERO_TECH_BADGES.map((t) => (
-                <span key={t} className="chip text-xs font-semibold">
-                  {t}
-                </span>
-              ))}
-            </div>
+
           </motion.div>
         </div>
       </div>
